@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // static file uploads
+app.use('/uploads', express.static('uploads'));
 app.use('/uploads', express.static('public/uploads'));
 
 // define port
